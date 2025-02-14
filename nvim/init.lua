@@ -1,4 +1,6 @@
 require("conf")
+--my added snippets
+require("snippets.cpp")
 -- colorscheme
 vim.cmd([[colorscheme gruvbox]])
 -- editor settings
@@ -14,4 +16,4 @@ vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8
-vim.opt.fillchars:append { eob = " " }
+vim.opt.fillchars:append({ eob = " " })
