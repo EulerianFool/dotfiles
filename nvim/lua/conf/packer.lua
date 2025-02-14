@@ -13,11 +13,29 @@ return require('packer').startup(function(use)
   }
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use { "ellisonleao/gruvbox.nvim" }
+  -- LSP
+  -- 
   use({'neovim/nvim-lspconfig'})
   use({'hrsh7th/nvim-cmp'})
   use({'hrsh7th/cmp-nvim-lsp'})
+  --use "sar/friendly-snippets"
   use {
     "williamboman/mason.nvim"
   }
-  use ({"windwp/nvim-autopairs"})
+  use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+  }
+  use({
+	"L3MON4D3/LuaSnip",
+  })
+  use({
+    "stevearc/conform.nvim",
+    config = function()
+      require("conform").setup()
+    end,
+  })
  end)
