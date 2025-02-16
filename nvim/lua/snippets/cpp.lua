@@ -12,14 +12,14 @@ ls.add_snippets("cpp", {
 #include <iostream>
 using namespace std;
 typedef long long LL;
-#define fastIO ios_base::sync_with_stdio(0);cin.tie(0);
+#define fastIO ios_base::sync_with_stdio(0);cin.tie(0)
 
 void solve(){
 	$^
 }
 
 int32_t main(){
-	fastIO
+	fastIO;
   bool TEST = $^;
   int t = 1;
   if(TEST) cin >> t;
