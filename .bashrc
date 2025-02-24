@@ -89,7 +89,7 @@ color_grey_white='\[\e[37;47m\]'
 
 color_reset='\[\033[0m\]'
 
-#separator=''
+#separatorr=''
 separator=''
 #separator='#'
 
