@@ -32,7 +32,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 require("lspconfig").clangd.setup({})
 require("lspconfig").lua_ls.setup({})
 require("lspconfig").vimls.setup({})
-require("lspconfig").harper_ls.setup({})
+require("lspconfig").ts_ls.setup({})
 
 local cmp = require("cmp")
 local luasnip = require("luasnip")

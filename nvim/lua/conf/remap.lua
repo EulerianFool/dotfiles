@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<ESC>")
 vim.keymap.set("i", "<C-Backspace>", "<C-w>")
 vim.keymap.set("n", "<leader>pf", vim.cmd.Ex)
+vim.keymap.set("n", "<C-a>", "ggvGy")
 vim.api.nvim_set_keymap(
 	"n",
 	"<F10>",
